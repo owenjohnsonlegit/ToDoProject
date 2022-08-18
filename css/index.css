@@ -1,0 +1,235 @@
+/* -------- Reverse #homepage-content2 #homepage-content4 -------- */
+
+#homepage-content2 .content,
+#homepage-content4 .content {
+  flex-direction: row-reverse;
+}
+
+/* ########################## SECTION ########################## */
+
+.section-content1 {
+  box-shadow: 0 -2rem 4rem 4rem hsla(0, 0%, 100%, 1);
+  position: relative;
+}
+
+/* -------------------- Content Styles -------------------- */
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content .content-details {
+  flex: 6;
+  min-width: 300px;
+  padding: 0 2rem;
+}
+
+.content .content-image {
+  flex: 5;
+  min-width: 300px;
+}
+
+.content-heading {
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+/* -------------------- Hero Content -------------------- */
+
+.hero {
+  align-items: center;
+  background-color: hsla(240, 0%, 100%, 1);
+  background-image: radial-gradient(
+      at 72% 0%,
+      hsla(5, 100%, 88%, 0.79) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 78%, hsla(5, 100%, 87%, 0.78) 0px, transparent 50%),
+    radial-gradient(at 78% 40%, hsla(201, 100%, 87%, 1) 0px, transparent 50%),
+    radial-gradient(at 11% 14%, hsla(204, 100%, 87%, 0.75) 0px, transparent 50%),
+    radial-gradient(at 34% 46%, hsla(206, 100%, 87%, 1) 0px, transparent 50%),
+    radial-gradient(at 1% 32%, hsla(15, 100%, 87%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 49%, hsla(13, 100%, 87%, 1) 0px, transparent 50%),
+    radial-gradient(at 73% 64%, hsla(13, 100%, 87%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 99%, hsla(197, 100%, 87%, 1) 0px, transparent 50%),
+    radial-gradient(at 26% 79%, hsla(196, 100%, 87%, 1) 0px, transparent 50%);
+  display: flex;
+  height: calc(100vh);
+  justify-content: center;
+  position: relative;
+}
+
+.hero-content-wrapper {
+  padding-bottom: 8rem;
+}
+
+.hero-down-button {
+  border: 1px solid hsla(0, 0%, 0%, 0.2);
+  background: hsla(0, 0%, 0%, 0);
+  border-radius: 50%;
+  bottom: 10rem;
+  fill: hsla(0, 0%, 0%, 0.2);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 3rem;
+  max-width: 3rem;
+  min-height: 3rem;
+  max-height: 3rem;
+  cursor: pointer;
+  transition: all ease 100ms;
+}
+
+.hero-down-button:hover,
+.hero-down-button:active {
+  border-color: hsla(0, 0%, 0%, 0.5);
+  fill: hsla(0, 0%, 0%, 0.5);
+}
+
+.hero-header-text {
+  color: var(--color-black-200);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: -1rem;
+  text-align: center;
+}
+
+.hero-header-title {
+  color: var(--color-black-200);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-left: -2rem;
+}
+
+.hero-header-title .alt-text-container {
+  position: relative;
+}
+
+.hero-header-title .alt-title-text {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+
+.hero-header-title .logo-img {
+  max-height: 5rem;
+}
+
+/* -------------------- Price Section -------------------- */
+
+.price-card {
+  background: hsla(0, 0%, 100%, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 3rem -2rem hsla(0, 0%, 0%, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1rem;
+  max-height: 28rem;
+  max-width: 20rem;
+  min-height: 28rem;
+  min-width: 15rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.price-card button {
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0 hsla(0, 0%, 0%, 0);
+  color: hsla(0, 0%, 40%);
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 3rem;
+  letter-spacing: 0.05rem;
+  transition: all ease 100ms;
+  width: 100%;
+}
+
+.price-card button:hover,
+.price-card button:active {
+  background: hsl(222, 60%, 50%);
+  box-shadow: 0 0.5rem 2rem -1rem hsla(0, 0%, 0%, 0.4);
+  color: hsl(0, 0%, 95%);
+}
+
+.price-card h3 {
+  color: var(--color-black-200);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.price-card ul li {
+  font-size: 1.03rem;
+  margin: 1rem 0;
+}
+
+.price-card ul li:nth-child(even) {
+  list-style-type: "👉 ";
+}
+
+.price-card ul li:nth-child(odd) {
+  list-style-type: "🎉 ";
+}
+
+.price-card-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.price-content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.price-section {
+  background-color: hsla(6, 0%, 0%, 0);
+  background-image: radial-gradient(
+      at 34% 86%,
+      hsla(7, 100%, 90%, 0.73) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 100% 100%,
+      hsla(212, 100%, 90%, 0.91) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 36% 51%, hsla(210, 100%, 90%, 1) 0px, transparent 50%),
+    radial-gradient(at 88% 70%, hsla(12, 100%, 90%, 0.98) 0px, transparent 50%),
+    radial-gradient(at 69% 43%, hsla(212, 100%, 90%, 1) 0px, transparent 50%),
+    radial-gradient(at 3% 43%, hsla(7, 90%, 90%, 0.86) 0px, transparent 50%),
+    radial-gradient(at 7% 84%, hsla(206, 100%, 90%, 1) 0px, transparent 50%);
+  padding: 8rem 0;
+}
+
+.price-section h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.price-small {
+  color: hsl(0, 0%, 50%);
+  font-size: 1rem;
+}

@@ -1,0 +1,258 @@
+:root {
+	--border-color-light: hsla(0, 0%, 90%, 0.8);
+	--color-black: #334;
+	--color-black-200: #445;
+	--color-grey: #cecece;
+	--color-white: #fff;
+	--nav-link-color: #888;
+	--nav-link-color-hover: #555;
+}
+
+/* Root HTML Element Styles (keep these to a minimal, use classes instead) */
+
+html,
+body {
+	color: var(--color-black);
+	font-family: Montserrat, "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana,
+		sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	background-color: var(--color-white);
+	position: relative;
+	z-index: 2;
+}
+
+footer {
+	background: var(--color-black);
+	bottom: 0;
+	color: var(--color-grey);
+	padding: 2rem;
+	position: sticky;
+	z-index: 0;
+}
+
+blockquote {
+	margin: 0;
+}
+
+/* -------- General Classes -------- */
+
+.flex-space {
+	flex: 1;
+}
+
+/* ########################## HEADER ########################## */
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+/* -------------------- Header Navbar -------------------- */
+
+.navbar {
+	align-items: center;
+	backdrop-filter: blur(1rem);
+	background-color: hsla(0, 0%, 100%, 0.85);
+	border-bottom: 0.05rem solid var(--border-color-light);
+	display: flex;
+	justify-content: space-between;
+	padding: 0 3rem;
+}
+
+.navbar-links {
+	list-style: none;
+}
+
+.navbar-links li {
+	display: inline-block;
+	padding: 0 0.5rem;
+}
+
+.navbar-links li a {
+	color: var(--nav-link-color);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	text-decoration: none;
+	transition: all ease 100ms;
+}
+
+.navbar-links li a:hover {
+	color: var(--nav-link-color-hover);
+}
+
+.navbar-logo a .logo-img {
+	height: 2.5rem;
+	margin: 0.5rem 0;
+	width: auto;
+}
+
+/* ########################## SECTION ########################## */
+
+.section {
+	padding: 4rem 2rem;
+	scroll-margin-top: 8rem;
+}
+
+/* ########################## Footer ########################## */
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.footer-links {
+	display: flex;
+	flex: 3;
+	justify-content: space-around;
+	min-width: 200px;
+}
+
+.footer-links h6,
+.footer-newsletter h6 {
+	font-size: large;
+	margin: 1rem 0;
+}
+
+.footer-links ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-links ul li {
+	margin: 0.5rem 0;
+	padding-left: 0.5rem;
+}
+
+.footer-links ul li a {
+	color: var(--color-grey);
+}
+
+.footer-links ul li a:hover {
+	color: var(--color-white);
+}
+
+.footer-newsletter {
+	flex: 4;
+	min-width: 200px;
+}
+
+.footer-quote {
+	flex: 6;
+	min-width: 300px;
+}
+
+.footer-section {
+	max-width: 400px;
+	padding: 1rem;
+}
+
+/* -------------------- Footer Social Icons -------------------- */
+
+.social-icon {
+	fill: var(--color-grey);
+	height: 1.75rem;
+	transition: all ease 100ms;
+	width: 1.75rem;
+}
+
+.social-icon:hover {
+	fill: var(--color-white);
+}
+
+/* -------------------- Footer figure quote -------------------- */
+
+.figure-quote {
+	background: var(--color-black-200);
+	border-left: 6px solid gray;
+	border-radius: 0.5rem;
+	color: var(--color-grey);
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	margin: 1rem 0;
+	padding: 1.2rem 1rem 1.2rem 3rem;
+	position: relative;
+}
+
+.figure-quote p {
+	font-style: italic;
+}
+
+.figure-quote::before {
+	color: gray;
+	content: "\201C";
+	font-family: Arial;
+	font-size: 4.5em;
+	left: 10px;
+	position: absolute;
+	top: -10px;
+}
+
+/* -------------------- Footer email form -------------------- */
+
+.email-form .input-group button {
+	background: hsla(0, 0%, 100%, 0.2);
+	border: none;
+	color: var(--color-grey);
+	cursor: pointer;
+	font-size: 1rem;
+	height: 2.5rem;
+	line-height: 0;
+	transition: all ease 100ms;
+	width: 2.5rem;
+}
+
+.email-form .input-group button:hover,
+.email-form .input-group button:active {
+	background: hsla(0, 0%, 100%, 0.3);
+	color: var(--color-white);
+}
+
+.email-form .input-group input {
+	background: hsla(0, 0%, 100%, 0.2);
+	border: none;
+	border-right: none;
+	color: var(--color-grey);
+	flex: 1;
+	font-size: 1rem;
+	height: 2.5rem;
+	outline: none;
+	padding: 0 0.5rem;
+	transition: all ease 100ms;
+}
+
+.email-form .input-group input::placeholder {
+	color: hsla(0, 0%, 100%, 0.4);
+}
+
+/* -------------------- Footer Email Form -------------------- */
+
+.input-group {
+	align-items: center;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.3);
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.input-group:focus-within {
+	box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.5);
+	outline: auto;
+}
+
+/* ------------------ Footer copyright paragraph styling ------------------ */
+
+.copyright p {
+	text-align: center;
+}
