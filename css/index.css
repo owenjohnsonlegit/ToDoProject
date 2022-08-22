@@ -122,6 +122,18 @@
   left: 1rem;
 }
 
+/* .alt-title-text1 {
+  display: none;
+} */
+
+.alt-title-text2 {
+  display: none;
+}
+
+.alt-title-text3 {
+  display: none;
+}
+
 .hero-header-title .logo-img {
   max-height: 5rem;
 }
